@@ -13,6 +13,7 @@
 		115373A61A00209F00000977 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 115373A51A00209F00000977 /* Images.xcassets */; };
 		115373A91A00209F00000977 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 115373A71A00209F00000977 /* LaunchScreen.xib */; };
 		115373B51A00209F00000977 /* MagisTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115373B41A00209F00000977 /* MagisTests.swift */; };
+		11A1AF581A0545AC0033B211 /* AnnouncementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A1AF571A0545AC0033B211 /* AnnouncementViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		115373AE1A00209F00000977 /* MagisTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MagisTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		115373B31A00209F00000977 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		115373B41A00209F00000977 /* MagisTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagisTests.swift; sourceTree = "<group>"; };
+		11A1AF571A0545AC0033B211 /* AnnouncementViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnnouncementViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 		1153739B1A00209F00000977 /* Magis */ = {
 			isa = PBXGroup;
 			children = (
+				11A1AF571A0545AC0033B211 /* AnnouncementViewController.swift */,
 				1153739E1A00209F00000977 /* AppDelegate.swift */,
 				115373A01A00209F00000977 /* ViewController.swift */,
 				115373A21A00209F00000977 /* Main.storyboard */,
@@ -213,6 +216,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				115373A11A00209F00000977 /* ViewController.swift in Sources */,
+				11A1AF581A0545AC0033B211 /* AnnouncementViewController.swift in Sources */,
 				1153739F1A00209F00000977 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -407,6 +411,7 @@
 				115373BA1A00209F00000977 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		115373BB1A00209F00000977 /* Build configuration list for PBXNativeTarget "MagisTests" */ = {
 			isa = XCConfigurationList;
@@ -415,6 +420,7 @@
 				115373BD1A00209F00000977 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
