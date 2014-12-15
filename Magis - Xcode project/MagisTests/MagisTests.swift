@@ -2,8 +2,8 @@
 //  MagisTests.swift
 //  MagisTests
 //
-//  Created by Johan Ospina on 10/28/14.
-//  Copyright (c) 2014 Global App Initiative. All rights reserved.
+//  Created by Johan Ospina on 12/14/14.
+//  Copyright (c) 2014 GlobalAppInitiative. All rights reserved.
 //
 
 import UIKit

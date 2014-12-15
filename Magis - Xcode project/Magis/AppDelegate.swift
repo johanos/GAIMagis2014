@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  Magis
 //
-//  Created by Johan Ospina on 10/28/14.
-//  Copyright (c) 2014 Global App Initiative. All rights reserved.
+//  Created by Johan Ospina on 12/14/14.
+//  Copyright (c) 2014 GlobalAppInitiative. All rights reserved.
 //
 
 import UIKit
@@ -16,6 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
         return true
     }
 

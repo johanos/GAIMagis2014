@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "115373981A00209F00000977"
+               BlueprintIdentifier = "11DB46D11A3E21F9002A5996"
                BuildableName = "Magis.app"
                BlueprintName = "Magis"
                ReferencedContainer = "container:Magis.xcodeproj">
@@ -28,7 +28,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "115373AD1A00209F00000977"
+               BlueprintIdentifier = "11DB46E81A3E21FA002A5996"
                BuildableName = "MagisTests.xctest"
                BlueprintName = "MagisTests"
                ReferencedContainer = "container:Magis.xcodeproj">
@@ -46,7 +46,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "115373AD1A00209F00000977"
+               BlueprintIdentifier = "11DB46E81A3E21FA002A5996"
                BuildableName = "MagisTests.xctest"
                BlueprintName = "MagisTests"
                ReferencedContainer = "container:Magis.xcodeproj">
@@ -56,7 +56,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "115373981A00209F00000977"
+            BlueprintIdentifier = "11DB46D11A3E21F9002A5996"
             BuildableName = "Magis.app"
             BlueprintName = "Magis"
             ReferencedContainer = "container:Magis.xcodeproj">
@@ -75,7 +75,7 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "115373981A00209F00000977"
+            BlueprintIdentifier = "11DB46D11A3E21F9002A5996"
             BuildableName = "Magis.app"
             BlueprintName = "Magis"
             ReferencedContainer = "container:Magis.xcodeproj">
@@ -93,7 +93,7 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "115373981A00209F00000977"
+            BlueprintIdentifier = "11DB46D11A3E21F9002A5996"
             BuildableName = "Magis.app"
             BlueprintName = "Magis"
             ReferencedContainer = "container:Magis.xcodeproj">
