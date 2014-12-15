@@ -85,13 +85,12 @@
 		11DB46D41A3E21F9002A5996 /* Magis */ = {
 			isa = PBXGroup;
 			children = (
-				11DB46D71A3E21F9002A5996 /* AppDelegate.swift */,
-				11DB46FB1A3E2316002A5996 /* ThirdViewController.swift */,
-				11DB46FD1A3E2333002A5996 /* FourthViewController.swift */,
-				11DB46D91A3E21F9002A5996 /* FirstViewController.swift */,
-				11DB46DB1A3E21F9002A5996 /* SecondViewController.swift */,
 				11DB46DD1A3E21F9002A5996 /* Main.storyboard */,
-				11DB46FF1A3E27D2002A5996 /* AnnouncementViewController.swift */,
+				11DB46D71A3E21F9002A5996 /* AppDelegate.swift */,
+				11DB47011A3E995B002A5996 /* AnnouncementsTab */,
+				11DB47021A3E9977002A5996 /* CollegeTab */,
+				11DB47031A3E999A002A5996 /* Questions */,
+				11DB47041A3E99BA002A5996 /* Calendar */,
 				11DB46E01A3E21FA002A5996 /* Images.xcassets */,
 				11DB46E21A3E21FA002A5996 /* LaunchScreen.xib */,
 				11DB46D51A3E21F9002A5996 /* Supporting Files */,
@@ -122,6 +121,39 @@
 				11DB46EE1A3E21FA002A5996 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		11DB47011A3E995B002A5996 /* AnnouncementsTab */ = {
+			isa = PBXGroup;
+			children = (
+				11DB46D91A3E21F9002A5996 /* FirstViewController.swift */,
+				11DB46FF1A3E27D2002A5996 /* AnnouncementViewController.swift */,
+			);
+			name = AnnouncementsTab;
+			sourceTree = "<group>";
+		};
+		11DB47021A3E9977002A5996 /* CollegeTab */ = {
+			isa = PBXGroup;
+			children = (
+				11DB46DB1A3E21F9002A5996 /* SecondViewController.swift */,
+			);
+			name = CollegeTab;
+			sourceTree = "<group>";
+		};
+		11DB47031A3E999A002A5996 /* Questions */ = {
+			isa = PBXGroup;
+			children = (
+				11DB46FB1A3E2316002A5996 /* ThirdViewController.swift */,
+			);
+			name = Questions;
+			sourceTree = "<group>";
+		};
+		11DB47041A3E99BA002A5996 /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				11DB46FD1A3E2333002A5996 /* FourthViewController.swift */,
+			);
+			name = Calendar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -421,6 +453,7 @@
 				11DB46F51A3E21FA002A5996 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		11DB46F61A3E21FA002A5996 /* Build configuration list for PBXNativeTarget "MagisTests" */ = {
 			isa = XCConfigurationList;
@@ -429,6 +462,7 @@
 				11DB46F81A3E21FA002A5996 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

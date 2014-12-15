@@ -104,7 +104,9 @@
                             <constraint firstItem="zDY-KL-SJ2" firstAttribute="top" secondItem="OQ4-fW-Yqt" secondAttribute="bottom" constant="53" id="l4r-wS-Nbq"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="xgc-2C-0ak"/>
+                    <navigationItem key="navigationItem" id="xgc-2C-0ak">
+                        <barButtonItem key="rightBarButtonItem" title="Pin" id="1pn-8h-lNK"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="announcementLabel" destination="ewa-v9-kzd" id="omp-AU-4K9"/>
                     </connections>
