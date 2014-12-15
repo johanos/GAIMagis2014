@@ -13,12 +13,20 @@ class AnnouncementViewController: UIViewController {
     
     @IBOutlet weak var announcementLabel: UILabel!
     
-    
     var statement = ""
+    var header = "Detailed View"
+    var titleToDisplay = ""
+    
+    
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         announcementLabel.text = statement
+        
+        self.title = titleToDisplay
     }
     
     override func didReceiveMemoryWarning() {

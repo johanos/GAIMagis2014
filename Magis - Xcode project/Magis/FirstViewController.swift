@@ -13,7 +13,7 @@ class FirstViewController: UIViewController, UITableViewDataSource, UITableViewD
     var announcementTableView : UITableView!
     
     
-    var tempList: [String] = ["Procrastinator club meeting postponed", "Severe Weather Closed School", "Get your forks out!, its Pancake season!", "Pleae don't fraternize with the wild boars"];
+    var tempList: [String] = ["Procrastinator club meeting postponed", "Severe Weather Closed School", "Get your forks out!, its Pancake season!", "Please don't fraternize with the wild boars", "Maybe Its the Water"];
    
     
     
@@ -39,7 +39,8 @@ class FirstViewController: UIViewController, UITableViewDataSource, UITableViewD
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         //do things for segueing
         let vc = segue.destinationViewController as AnnouncementViewController
-        vc.statement = "Alex SUCKS"
+        vc.statement = "Announcement Text"
+        vc.titleToDisplay = "Announcement Title"
     }
     
     
