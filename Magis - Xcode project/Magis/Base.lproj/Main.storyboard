@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Announcements-->
@@ -61,48 +60,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SOMETHING" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ewa-v9-kzd">
-                                <rect key="frame" x="100" y="72" width="272" height="48"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="272" id="cew-qQ-8d0"/>
-                                    <constraint firstAttribute="height" constant="48" id="xQ7-gq-PAH"/>
-                                </constraints>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SOMETHING" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ewa-v9-kzd">
+                                <rect key="frame" x="121" y="207" width="272" height="48"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OQ4-fW-Yqt">
-                                <rect key="frame" x="16" y="148" width="568" height="246"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="246" id="Dgn-Xc-IJk"/>
-                                </constraints>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="RSVP?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zDY-KL-SJ2">
-                                <rect key="frame" x="273" y="447" width="54" height="27"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xQ4-hG-7L6">
-                                <rect key="frame" x="276" y="475.5" width="51" height="31"/>
-                            </switch>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="OQ4-fW-Yqt" firstAttribute="top" secondItem="ewa-v9-kzd" secondAttribute="bottom" constant="28" id="93O-XN-w2U"/>
-                            <constraint firstItem="xQ4-hG-7L6" firstAttribute="top" secondItem="zDY-KL-SJ2" secondAttribute="bottom" constant="8" id="CHG-0q-jEF"/>
-                            <constraint firstItem="ewa-v9-kzd" firstAttribute="top" secondItem="MWU-qp-fUp" secondAttribute="bottom" constant="8" symbolic="YES" id="MJe-Zh-wTs"/>
-                            <constraint firstItem="zDY-KL-SJ2" firstAttribute="centerX" secondItem="OQ4-fW-Yqt" secondAttribute="centerX" id="Ncf-qc-wEX"/>
-                            <constraint firstAttribute="centerX" secondItem="OQ4-fW-Yqt" secondAttribute="centerX" id="QMj-bP-jtv"/>
-                            <constraint firstAttribute="centerX" secondItem="xQ4-hG-7L6" secondAttribute="centerX" id="RaP-Ih-eDA"/>
-                            <constraint firstItem="ewa-v9-kzd" firstAttribute="leading" secondItem="gxm-Pt-cBw" secondAttribute="leadingMargin" constant="84" id="UKd-bL-JCN"/>
-                            <constraint firstItem="OQ4-fW-Yqt" firstAttribute="leading" secondItem="gxm-Pt-cBw" secondAttribute="leadingMargin" id="Xjg-dh-yIH"/>
-                            <constraint firstItem="zDY-KL-SJ2" firstAttribute="top" secondItem="OQ4-fW-Yqt" secondAttribute="bottom" constant="53" id="l4r-wS-Nbq"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="xgc-2C-0ak"/>
                     <connections>
