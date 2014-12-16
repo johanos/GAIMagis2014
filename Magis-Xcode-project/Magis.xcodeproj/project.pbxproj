@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1157868B1A3FF49B00920543 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11DB473D1A3EA2D6002A5996 /* CoreGraphics.framework */; };
+		1157868D1A3FF4A300920543 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1157868C1A3FF4A300920543 /* CoreFoundation.framework */; };
+		1157868E1A3FF4A900920543 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11DB47401A3EA2D6002A5996 /* UIKit.framework */; };
+		1157868F1A3FF4DB00920543 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11DB473E1A3EA2D6002A5996 /* QuartzCore.framework */; };
+		115786911A3FF59800920543 /* CKCalendarView.h in Sources */ = {isa = PBXBuildFile; fileRef = 11DB47171A3EA2A5002A5996 /* CKCalendarView.h */; };
+		115786921A3FF59800920543 /* CKCalendarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 11DB47181A3EA2A5002A5996 /* CKCalendarView.m */; };
+		115786941A3FFAFC00920543 /* EventFeedTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115786931A3FFAFC00920543 /* EventFeedTVC.swift */; };
+		115786961A40069700920543 /* DetailEventVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115786951A40069700920543 /* DetailEventVC.swift */; };
 		11DB46D81A3E21F9002A5996 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DB46D71A3E21F9002A5996 /* AppDelegate.swift */; };
 		11DB46DA1A3E21F9002A5996 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DB46D91A3E21F9002A5996 /* FirstViewController.swift */; };
 		11DB46DC1A3E21F9002A5996 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DB46DB1A3E21F9002A5996 /* SecondViewController.swift */; };
@@ -17,6 +25,12 @@
 		11DB46FC1A3E2316002A5996 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DB46FB1A3E2316002A5996 /* ThirdViewController.swift */; };
 		11DB46FE1A3E2333002A5996 /* FourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DB46FD1A3E2333002A5996 /* FourthViewController.swift */; };
 		11DB47001A3E27D2002A5996 /* AnnouncementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DB46FF1A3E27D2002A5996 /* AnnouncementViewController.swift */; };
+		11DB47371A3EA2C1002A5996 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 11DB472A1A3EA2C1002A5996 /* InfoPlist.strings */; };
+		11DB47381A3EA2C1002A5996 /* Calendar-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 11DB472B1A3EA2C1002A5996 /* Calendar-Info.plist */; };
+		11DB47391A3EA2C1002A5996 /* right_arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 11DB472D1A3EA2C1002A5996 /* right_arrow@2x.png */; };
+		11DB473A1A3EA2C1002A5996 /* right_arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 11DB472E1A3EA2C1002A5996 /* right_arrow.png */; };
+		11DB473B1A3EA2C1002A5996 /* left_arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 11DB472F1A3EA2C1002A5996 /* left_arrow@2x.png */; };
+		11DB473C1A3EA2C1002A5996 /* left_arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 11DB47301A3EA2C1002A5996 /* left_arrow.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,6 +44,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1157868C1A3FF4A300920543 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		115786931A3FFAFC00920543 /* EventFeedTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventFeedTVC.swift; sourceTree = "<group>"; };
+		115786951A40069700920543 /* DetailEventVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailEventVC.swift; sourceTree = "<group>"; };
 		11DB46D21A3E21F9002A5996 /* Magis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Magis.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11DB46D61A3E21F9002A5996 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		11DB46D71A3E21F9002A5996 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -42,8 +59,26 @@
 		11DB46EE1A3E21FA002A5996 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		11DB46EF1A3E21FA002A5996 /* MagisTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagisTests.swift; sourceTree = "<group>"; };
 		11DB46FB1A3E2316002A5996 /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
-		11DB46FD1A3E2333002A5996 /* FourthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FourthViewController.swift; sourceTree = "<group>"; };
+		11DB46FD1A3E2333002A5996 /* FourthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FourthViewController.swift; path = ../../../FourthViewController.swift; sourceTree = "<group>"; };
 		11DB46FF1A3E27D2002A5996 /* AnnouncementViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnnouncementViewController.swift; sourceTree = "<group>"; };
+		11DB47171A3EA2A5002A5996 /* CKCalendarView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CKCalendarView.h; sourceTree = "<group>"; };
+		11DB47181A3EA2A5002A5996 /* CKCalendarView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CKCalendarView.m; sourceTree = "<group>"; };
+		11DB471A1A3EA2A5002A5996 /* left_arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = left_arrow.png; sourceTree = "<group>"; };
+		11DB471B1A3EA2A5002A5996 /* left_arrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "left_arrow@2x.png"; sourceTree = "<group>"; };
+		11DB471C1A3EA2A5002A5996 /* right_arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = right_arrow.png; sourceTree = "<group>"; };
+		11DB471D1A3EA2A5002A5996 /* right_arrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "right_arrow@2x.png"; sourceTree = "<group>"; };
+		11DB47271A3EA2C1002A5996 /* Calendar-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Calendar-Prefix.pch"; sourceTree = "<group>"; };
+		11DB47291A3EA2C1002A5996 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		11DB472B1A3EA2C1002A5996 /* Calendar-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Calendar-Info.plist"; sourceTree = "<group>"; };
+		11DB472D1A3EA2C1002A5996 /* right_arrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "right_arrow@2x.png"; path = "../../Source/resources/right_arrow@2x.png"; sourceTree = "<group>"; };
+		11DB472E1A3EA2C1002A5996 /* right_arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = right_arrow.png; path = ../../Source/resources/right_arrow.png; sourceTree = "<group>"; };
+		11DB472F1A3EA2C1002A5996 /* left_arrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "left_arrow@2x.png"; path = "../../Source/resources/left_arrow@2x.png"; sourceTree = "<group>"; };
+		11DB47301A3EA2C1002A5996 /* left_arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = left_arrow.png; path = ../../Source/resources/left_arrow.png; sourceTree = "<group>"; };
+		11DB473D1A3EA2D6002A5996 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.1.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = "<absolute>"; };
+		11DB473E1A3EA2D6002A5996 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.1.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = "<absolute>"; };
+		11DB473F1A3EA2D6002A5996 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		11DB47401A3EA2D6002A5996 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.1.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = "<absolute>"; };
+		11DB47491A3FDDC5002A5996 /* Magis-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Magis-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +86,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1157868F1A3FF4DB00920543 /* QuartzCore.framework in Frameworks */,
+				1157868E1A3FF4A900920543 /* UIKit.framework in Frameworks */,
+				1157868B1A3FF49B00920543 /* CoreGraphics.framework in Frameworks */,
+				1157868D1A3FF4A300920543 /* CoreFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +109,8 @@
 				11DB46D41A3E21F9002A5996 /* Magis */,
 				11DB46EC1A3E21FA002A5996 /* MagisTests */,
 				11DB46D31A3E21F9002A5996 /* Products */,
+				11DB47411A3EA2D6002A5996 /* Frameworks */,
+				11DB47491A3FDDC5002A5996 /* Magis-Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -86,6 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				11DB46DD1A3E21F9002A5996 /* Main.storyboard */,
+				11DB47321A3EA2C1002A5996 /* Calendar */,
 				11DB46D71A3E21F9002A5996 /* AppDelegate.swift */,
 				11DB47011A3E995B002A5996 /* AnnouncementsTab */,
 				11DB47021A3E9977002A5996 /* CollegeTab */,
@@ -151,9 +193,78 @@
 		11DB47041A3E99BA002A5996 /* Calendar */ = {
 			isa = PBXGroup;
 			children = (
-				11DB46FD1A3E2333002A5996 /* FourthViewController.swift */,
 			);
 			name = Calendar;
+			sourceTree = "<group>";
+		};
+		11DB47161A3EA2A5002A5996 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				11DB47171A3EA2A5002A5996 /* CKCalendarView.h */,
+				11DB47181A3EA2A5002A5996 /* CKCalendarView.m */,
+				11DB47191A3EA2A5002A5996 /* resources */,
+			);
+			name = Source;
+			path = ../../Source;
+			sourceTree = "<group>";
+		};
+		11DB47191A3EA2A5002A5996 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				11DB471A1A3EA2A5002A5996 /* left_arrow.png */,
+				11DB471B1A3EA2A5002A5996 /* left_arrow@2x.png */,
+				11DB471C1A3EA2A5002A5996 /* right_arrow.png */,
+				11DB471D1A3EA2A5002A5996 /* right_arrow@2x.png */,
+			);
+			path = resources;
+			sourceTree = "<group>";
+		};
+		11DB472C1A3EA2C1002A5996 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				11DB47271A3EA2C1002A5996 /* Calendar-Prefix.pch */,
+				11DB472A1A3EA2C1002A5996 /* InfoPlist.strings */,
+				11DB472B1A3EA2C1002A5996 /* Calendar-Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		11DB47311A3EA2C1002A5996 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				11DB472D1A3EA2C1002A5996 /* right_arrow@2x.png */,
+				11DB472E1A3EA2C1002A5996 /* right_arrow.png */,
+				11DB472F1A3EA2C1002A5996 /* left_arrow@2x.png */,
+				11DB47301A3EA2C1002A5996 /* left_arrow.png */,
+			);
+			name = resources;
+			sourceTree = "<group>";
+		};
+		11DB47321A3EA2C1002A5996 /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				115786951A40069700920543 /* DetailEventVC.swift */,
+				115786931A3FFAFC00920543 /* EventFeedTVC.swift */,
+				11DB46FD1A3E2333002A5996 /* FourthViewController.swift */,
+				11DB47161A3EA2A5002A5996 /* Source */,
+				11DB472C1A3EA2C1002A5996 /* Supporting Files */,
+				11DB47311A3EA2C1002A5996 /* resources */,
+			);
+			name = Calendar;
+			path = "CKCalendar-master/Examples/Calendar";
+			sourceTree = "<group>";
+		};
+		11DB47411A3EA2D6002A5996 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1157868C1A3FF4A300920543 /* CoreFoundation.framework */,
+				11DB473D1A3EA2D6002A5996 /* CoreGraphics.framework */,
+				11DB473E1A3EA2D6002A5996 /* QuartzCore.framework */,
+				11DB473F1A3EA2D6002A5996 /* Foundation.framework */,
+				11DB47401A3EA2D6002A5996 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			path = "Magis/CKCalendar-master/Examples";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,8 +348,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				11DB46DF1A3E21F9002A5996 /* Main.storyboard in Resources */,
+				11DB47371A3EA2C1002A5996 /* InfoPlist.strings in Resources */,
 				11DB46E41A3E21FA002A5996 /* LaunchScreen.xib in Resources */,
+				11DB473B1A3EA2C1002A5996 /* left_arrow@2x.png in Resources */,
+				11DB47381A3EA2C1002A5996 /* Calendar-Info.plist in Resources */,
 				11DB46E11A3E21FA002A5996 /* Images.xcassets in Resources */,
+				11DB473C1A3EA2C1002A5996 /* left_arrow.png in Resources */,
+				11DB473A1A3EA2C1002A5996 /* right_arrow.png in Resources */,
+				11DB47391A3EA2C1002A5996 /* right_arrow@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,7 +373,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				115786961A40069700920543 /* DetailEventVC.swift in Sources */,
+				115786911A3FF59800920543 /* CKCalendarView.h in Sources */,
+				115786921A3FF59800920543 /* CKCalendarView.m in Sources */,
 				11DB46DC1A3E21F9002A5996 /* SecondViewController.swift in Sources */,
+				115786941A3FFAFC00920543 /* EventFeedTVC.swift in Sources */,
 				11DB46D81A3E21F9002A5996 /* AppDelegate.swift in Sources */,
 				11DB46FC1A3E2316002A5996 /* ThirdViewController.swift in Sources */,
 				11DB46DA1A3E21F9002A5996 /* FirstViewController.swift in Sources */,
@@ -298,6 +419,14 @@
 				11DB46E31A3E21FA002A5996 /* Base */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		11DB472A1A3EA2C1002A5996 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				11DB47291A3EA2C1002A5996 /* en */,
+			);
+			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -384,9 +513,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Magis/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/Bae/Development/iOS/GAIMagis2014/Magis-Xcode-project/Magis-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -394,9 +526,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Magis/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/Bae/Development/iOS/GAIMagis2014/Magis-Xcode-project/Magis-Bridging-Header.h";
 			};
 			name = Release;
 		};
