@@ -9,7 +9,9 @@
 
 
 //CKCalendar Should be here
-class FourthViewController: UIViewController {
+class FourthViewController: UIViewController, CKCalendarDelegate {
+    
+    var eventDetailsVC = DetailEventVC()
   
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,20 +27,21 @@ class FourthViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-   
-    @IBAction func goToEventFeedTV(sender: AnyObject) {
-        //the storyboard is calling prepareForSegue for us and performSegueWithIdentifier
-
-    }
 
 
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         let VC = segue.destinationViewController as EventFeedTVC
-        
+    
+        if VC.isKindOfClass(EventFeedTVC){
+            
         var eventsListToPass : [String] = ["Bonfire!", "College Visit", "SAT Exam"]
         
         VC.eventList = eventsListToPass
         VC.eventsToLoad = eventsListToPass.count
+        }
         
+    }
+    func calendar(calendar: CKCalendarView!, didSelectDate date: NSDate!) {
+        //make a connection and segue to the detailed view of the event
     }
 }
