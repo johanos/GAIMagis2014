@@ -18,6 +18,7 @@ class FourthViewController: UIViewController, CKCalendarDelegate {
        
    
         let calendar = CKCalendarView(frame: CGRectMake(0, 60, self.view.bounds.width, self.view.bounds.height));
+        calendar.delegate = self;
         self.view.addSubview(calendar);
         
         // Do any additional setup after loading the view, typically from a nib.
@@ -30,18 +31,31 @@ class FourthViewController: UIViewController, CKCalendarDelegate {
 
 
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        let VC = segue.destinationViewController as EventFeedTVC
+        let VC: AnyObject = segue.destinationViewController
     
         if VC.isKindOfClass(EventFeedTVC){
+       
             
         var eventsListToPass : [String] = ["Bonfire!", "College Visit", "SAT Exam"]
         
-        VC.eventList = eventsListToPass
-        VC.eventsToLoad = eventsListToPass.count
-        }
+        (VC as EventFeedTVC).eventList = eventsListToPass
+        (VC as EventFeedTVC).eventsToLoad = eventsListToPass.count
         
+        } else if VC.isKindOfClass(DetailEventVC) {
+            //do nothing for now
+            
+            
+        }
+    
+    
     }
+
     func calendar(calendar: CKCalendarView!, didSelectDate date: NSDate!) {
         //make a connection and segue to the detailed view of the event
+            //self.performSegueWithIdentifier("calendarEventSegue", sender: self)
+     
+        
     }
+
 }
+

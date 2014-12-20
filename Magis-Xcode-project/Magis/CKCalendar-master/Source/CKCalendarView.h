@@ -41,7 +41,7 @@ typedef enum {
 @property (nonatomic, strong) NSLocale *locale;
 
 @property (nonatomic, readonly) NSArray *datesShowing;
-
+@property (nonatomic, readonly) NSMutableArray* dateButtons;
 @property (nonatomic) BOOL onlyShowCurrentMonth;
 @property (nonatomic) BOOL adaptHeightToNumberOfWeeksInMonth;
 

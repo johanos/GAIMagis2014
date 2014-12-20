@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -115,7 +116,7 @@
             </objects>
             <point key="canvasLocation" x="2908" y="-2652"/>
         </scene>
-        <!--College-->
+        <!--Second View Controller-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
                 <viewController id="8rJ-Kc-sve" customClass="SecondViewController" customModule="Magis" customModuleProvider="target" sceneMemberID="viewController">
@@ -126,13 +127,131 @@
                     <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2nj-rq-8qk">
+                                <rect key="frame" x="236" y="502" width="128" height="30"/>
+                                <state key="normal" title="College  Discovery">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="collegeDiscoveryButtonClicked:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="RJ7-hY-Vjd"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2vP-j1-saM">
+                                <rect key="frame" x="16" y="117" width="568" height="300"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="398" id="jmK-5h-rlL"/>
+                                    <constraint firstAttribute="width" secondItem="2vP-j1-saM" secondAttribute="height" multiplier="170:200" id="y0U-Tk-Wtn"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="jmK-5h-rlL"/>
+                                        <exclude reference="y0U-Tk-Wtn"/>
+                                    </mask>
+                                </variation>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="College Annoucements Page" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0es-VS-2vS">
+                                <rect key="frame" x="189" y="72" width="222.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zec-Sx-aIV">
+                                <rect key="frame" x="255" y="464" width="89" height="30"/>
+                                <state key="normal" title="Scholarships">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="scholarshipButtonClicked:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="SAe-5Z-Z8T"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="zec-Sx-aIV" firstAttribute="top" secondItem="2vP-j1-saM" secondAttribute="bottom" constant="47" id="1Dz-FX-WFV"/>
+                            <constraint firstItem="Djb-ko-YwX" firstAttribute="top" secondItem="2nj-rq-8qk" secondAttribute="bottom" constant="19" id="83U-R4-AMl"/>
+                            <constraint firstItem="2vP-j1-saM" firstAttribute="centerX" secondItem="0es-VS-2vS" secondAttribute="centerX" id="JQm-7F-jUb"/>
+                            <constraint firstItem="2vP-j1-saM" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leading" constant="16" id="Nfl-2W-FCD"/>
+                            <constraint firstAttribute="centerX" secondItem="2nj-rq-8qk" secondAttribute="centerX" id="OJX-ja-cng"/>
+                            <constraint firstItem="0es-VS-2vS" firstAttribute="top" secondItem="L7p-HK-0SC" secondAttribute="bottom" constant="8" id="aoX-lr-FRk"/>
+                            <constraint firstItem="2nj-rq-8qk" firstAttribute="top" secondItem="zec-Sx-aIV" secondAttribute="bottom" constant="8" id="dFY-QR-LHZ"/>
+                            <constraint firstAttribute="centerX" secondItem="zec-Sx-aIV" secondAttribute="centerX" id="eux-kb-gHS"/>
+                            <constraint firstAttribute="trailing" secondItem="2vP-j1-saM" secondAttribute="trailing" constant="16" id="js5-PB-imM"/>
+                            <constraint firstItem="2vP-j1-saM" firstAttribute="top" secondItem="0es-VS-2vS" secondAttribute="bottom" constant="25" id="vqi-iz-5DV"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="College" image="second" id="cPa-gy-q4n"/>
+                    <navigationItem key="navigationItem" id="ezd-wd-CP2"/>
+                    <connections>
+                        <outlet property="announcementHeader" destination="0es-VS-2vS" id="d9M-qK-ape"/>
+                        <outlet property="importantAnnouncementTextView" destination="2vP-j1-saM" id="nQg-QV-Q4p"/>
+                        <segue destination="IR9-2y-ieP" kind="show" identifier="scholarships" id="Hz2-Gy-5SI"/>
+                        <segue destination="mvq-Me-Gz8" kind="show" identifier="CollegeSearch" id="k2n-il-BkV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="762" y="-772"/>
+            <point key="canvasLocation" x="1574" y="-772"/>
+        </scene>
+        <!--College Search View Controller-->
+        <scene sceneID="1bD-uy-yAn">
+            <objects>
+                <viewController id="mvq-Me-Gz8" customClass="CollegeSearchViewController" customModule="Magis" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gb4-gi-3CY"/>
+                        <viewControllerLayoutGuide type="bottom" id="lMe-J2-EKo"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Jtw-bi-IlR">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UFJ-IN-uky" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2332" y="-452"/>
+        </scene>
+        <!--Scholarship Page Table View Controller-->
+        <scene sceneID="b6j-tu-vVi">
+            <objects>
+                <viewController id="IR9-2y-ieP" customClass="ScholarshipPageTableViewController" customModule="Magis" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6FW-dC-e5k"/>
+                        <viewControllerLayoutGuide type="bottom" id="0l1-lE-Uur"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Qwj-4P-axG">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="P6i-tP-xMH">
+                                <rect key="frame" x="-36" y="-20" width="600" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="scholarshipCell" id="Ofh-kc-qtX">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Ofh-kc-qtX" id="3MO-bA-t2s">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="IR9-2y-ieP" id="hxP-11-Ypc"/>
+                                    <outlet property="delegate" destination="IR9-2y-ieP" id="kuf-T6-ey8"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="scholarshipTableView" destination="P6i-tP-xMH" id="WJF-mx-3WD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GJ8-9U-88P" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2247" y="-1210"/>
         </scene>
         <!--Questions-->
         <scene sceneID="Eik-IE-bHb">
@@ -166,7 +285,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="The Calendar View Gets Generated By Code" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Be1-yZ-4G6">
-                                <rect key="frame" x="121" y="105" width="342" height="21"/>
+                                <rect key="frame" x="0.0" y="0.0" width="341.5" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -181,6 +300,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <segue destination="o19-ix-56o" kind="show" identifier="calendarEventSegue" id="ryu-0J-dy4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qeV-of-Fta" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -226,7 +348,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sNz-hX-HSH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2299" y="1605"/>
+            <point key="canvasLocation" x="2285" y="1337"/>
         </scene>
         <!--Detail EventVC-->
         <scene sceneID="CbQ-q0-kcE">
@@ -256,7 +378,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="p7A-36-PTf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2975" y="1598"/>
+            <point key="canvasLocation" x="2285" y="2106"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -270,7 +392,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="SxY-1z-faM" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
-                        <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
+                        <segue destination="cPO-Y5-duP" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
                         <segue destination="aqg-Q1-sQn" kind="relationship" relationship="viewControllers" id="2w3-uR-P0a"/>
                         <segue destination="VnU-Ao-4qN" kind="relationship" relationship="viewControllers" id="g7c-sC-eou"/>
                     </connections>
@@ -317,9 +439,31 @@
             </objects>
             <point key="canvasLocation" x="762" y="1625"/>
         </scene>
+        <!--College-->
+        <scene sceneID="Cwm-Uy-aQv">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="cPO-Y5-duP" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="College" image="second" id="cPa-gy-q4n"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="hB7-l7-k1H">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="8rJ-Kc-sve" kind="relationship" relationship="rootViewController" id="OdN-N9-seH"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="J6Q-YJ-zWH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="762" y="-772"/>
+        </scene>
     </scenes>
     <resources>
         <image name="first" width="30" height="30"/>
         <image name="second" width="30" height="30"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="ryu-0J-dy4"/>
+    </inferredMetricsTieBreakers>
 </document>

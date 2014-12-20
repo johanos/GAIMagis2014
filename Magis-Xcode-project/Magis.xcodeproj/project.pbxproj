@@ -31,6 +31,8 @@
 		11DB473A1A3EA2C1002A5996 /* right_arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 11DB472E1A3EA2C1002A5996 /* right_arrow.png */; };
 		11DB473B1A3EA2C1002A5996 /* left_arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 11DB472F1A3EA2C1002A5996 /* left_arrow@2x.png */; };
 		11DB473C1A3EA2C1002A5996 /* left_arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 11DB47301A3EA2C1002A5996 /* left_arrow.png */; };
+		11F3FF9F1A44EE960028C053 /* ScholarshipPageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F3FF9E1A44EE960028C053 /* ScholarshipPageTableViewController.swift */; };
+		11F3FFA11A44EEC10028C053 /* CollegeSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F3FFA01A44EEC10028C053 /* CollegeSearchViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +81,8 @@
 		11DB473F1A3EA2D6002A5996 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		11DB47401A3EA2D6002A5996 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.1.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = "<absolute>"; };
 		11DB47491A3FDDC5002A5996 /* Magis-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Magis-Bridging-Header.h"; sourceTree = "<group>"; };
+		11F3FF9E1A44EE960028C053 /* ScholarshipPageTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScholarshipPageTableViewController.swift; sourceTree = "<group>"; };
+		11F3FFA01A44EEC10028C053 /* CollegeSearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollegeSearchViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,7 +136,6 @@
 				11DB47011A3E995B002A5996 /* AnnouncementsTab */,
 				11DB47021A3E9977002A5996 /* CollegeTab */,
 				11DB47031A3E999A002A5996 /* Questions */,
-				11DB47041A3E99BA002A5996 /* Calendar */,
 				11DB46E01A3E21FA002A5996 /* Images.xcassets */,
 				11DB46E21A3E21FA002A5996 /* LaunchScreen.xib */,
 				11DB46D51A3E21F9002A5996 /* Supporting Files */,
@@ -177,6 +180,8 @@
 		11DB47021A3E9977002A5996 /* CollegeTab */ = {
 			isa = PBXGroup;
 			children = (
+				11F3FF9E1A44EE960028C053 /* ScholarshipPageTableViewController.swift */,
+				11F3FFA01A44EEC10028C053 /* CollegeSearchViewController.swift */,
 				11DB46DB1A3E21F9002A5996 /* SecondViewController.swift */,
 			);
 			name = CollegeTab;
@@ -188,13 +193,6 @@
 				11DB46FB1A3E2316002A5996 /* ThirdViewController.swift */,
 			);
 			name = Questions;
-			sourceTree = "<group>";
-		};
-		11DB47041A3E99BA002A5996 /* Calendar */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Calendar;
 			sourceTree = "<group>";
 		};
 		11DB47161A3EA2A5002A5996 /* Source */ = {
@@ -377,7 +375,9 @@
 				115786911A3FF59800920543 /* CKCalendarView.h in Sources */,
 				115786921A3FF59800920543 /* CKCalendarView.m in Sources */,
 				11DB46DC1A3E21F9002A5996 /* SecondViewController.swift in Sources */,
+				11F3FFA11A44EEC10028C053 /* CollegeSearchViewController.swift in Sources */,
 				115786941A3FFAFC00920543 /* EventFeedTVC.swift in Sources */,
+				11F3FF9F1A44EE960028C053 /* ScholarshipPageTableViewController.swift in Sources */,
 				11DB46D81A3E21F9002A5996 /* AppDelegate.swift in Sources */,
 				11DB46FC1A3E2316002A5996 /* ThirdViewController.swift in Sources */,
 				11DB46DA1A3E21F9002A5996 /* FirstViewController.swift in Sources */,
