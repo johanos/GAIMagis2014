@@ -166,7 +166,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="scholarshipButtonClicked:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="SAe-5Z-Z8T"/>
+                                    <segue destination="yRj-VZ-Chm" kind="show" id="YIg-q8-hyh"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -188,13 +188,47 @@
                     <connections>
                         <outlet property="announcementHeader" destination="0es-VS-2vS" id="d9M-qK-ape"/>
                         <outlet property="importantAnnouncementTextView" destination="2vP-j1-saM" id="nQg-QV-Q4p"/>
-                        <segue destination="IR9-2y-ieP" kind="show" identifier="scholarships" id="Hz2-Gy-5SI"/>
                         <segue destination="mvq-Me-Gz8" kind="show" identifier="CollegeSearch" id="k2n-il-BkV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1574" y="-772"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="baQ-96-FUr">
+            <objects>
+                <viewController id="yRj-VZ-Chm" customClass="ViewController" customModule="Magis" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="skh-u0-3mu"/>
+                        <viewControllerLayoutGuide type="bottom" id="f2P-CF-j6Z"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="WTl-d6-LkM">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="ZOT-rE-NBf">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="scholarshipCell" id="BQv-4g-1xL">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="BQv-4g-1xL" id="cKa-Xp-qmq">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="scholarshipTV" destination="ZOT-rE-NBf" id="6Ek-ga-IJh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LFh-0P-wzj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2384" y="-1592"/>
         </scene>
         <!--College Search View Controller-->
         <scene sceneID="1bD-uy-yAn">
@@ -213,45 +247,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UFJ-IN-uky" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2332" y="-452"/>
-        </scene>
-        <!--Scholarship Page Table View Controller-->
-        <scene sceneID="b6j-tu-vVi">
-            <objects>
-                <viewController id="IR9-2y-ieP" customClass="ScholarshipPageTableViewController" customModule="Magis" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="6FW-dC-e5k"/>
-                        <viewControllerLayoutGuide type="bottom" id="0l1-lE-Uur"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Qwj-4P-axG">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="P6i-tP-xMH">
-                                <rect key="frame" x="-36" y="-20" width="600" height="600"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="scholarshipCell" id="Ofh-kc-qtX">
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Ofh-kc-qtX" id="3MO-bA-t2s">
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </prototypes>
-                                <connections>
-                                    <outlet property="dataSource" destination="IR9-2y-ieP" id="hxP-11-Ypc"/>
-                                    <outlet property="delegate" destination="IR9-2y-ieP" id="kuf-T6-ey8"/>
-                                </connections>
-                            </tableView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <connections>
-                        <outlet property="scholarshipTableView" destination="P6i-tP-xMH" id="WJF-mx-3WD"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="GJ8-9U-88P" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2247" y="-1210"/>
         </scene>
         <!--Questions-->
         <scene sceneID="Eik-IE-bHb">

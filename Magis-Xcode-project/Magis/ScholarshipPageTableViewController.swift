@@ -9,8 +9,12 @@
 import UIKit
 
 class ScholarshipPageTableViewController: UITableViewController {
-    @IBOutlet weak var scholarshipTableView: UITableView!
+    
+    var scholarships : [String] = ["Google millenial", "Gates Foundation", "Happy"]
+    @IBOutlet
+    var scholarshipTableView: UITableView!
 
+   
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -20,6 +24,9 @@ class ScholarshipPageTableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        
+        self.scholarshipTableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: "scholarshipCell")
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -29,36 +36,31 @@ class ScholarshipPageTableViewController: UITableViewController {
 
     // MARK: - Table view data source
 
-    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        // #warning Potentially incomplete method implementation.
-        // Return the number of sections.
-        return 0
-    }
-
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete method implementation.
-        // Return the number of rows in the section.
-        return 0
+        return scholarships.count;
     }
 
     
-    /*
+    
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath) as UITableViewCell
-
-        // Configure the cell...
-
+        let cellIdentifier = "scholarshipCell"
+        var cell = scholarshipTableView.dequeueReusableCellWithIdentifier(cellIdentifier, forIndexPath: indexPath) as UITableViewCell
         return cell
     }
+    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        return 1
+    }
     
-    */
-    /*
+    
+    
     // Override to support conditional editing of the table view.
+    /*
     override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
         // Return NO if you do not want the specified item to be editable.
-        return true
+        return NO
     }
     */
+    
 
     /*
     // Override to support editing the table view.

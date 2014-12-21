@@ -21,6 +21,8 @@ class FirstViewController: UIViewController, UITableViewDataSource, UITableViewD
         
         
         return tempList.count;
+        
+        
     }
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
