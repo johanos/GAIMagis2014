@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CollegeSearchViewController: UIViewController {
+class CollegeSearchViewController: UIViewController, UISearchBarDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
